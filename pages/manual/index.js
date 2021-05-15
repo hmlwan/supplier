@@ -22,6 +22,22 @@ Page({
       })
     }
   },
+  copyText(e) {
+    const system = wx.getSystemInfoSync();
+    if(system.platform != 'ios') {
+      return;
+    }
+    const texts = this.data.manualText.replace(/<[^>]+>/g, "");
+
+    wx.setClipboardData({
+      data: texts,
+      success() {
+        wx.showToast({
+          title: '复制成功',
+        })
+      }
+    })
+  },
   
   onLoad() {
      const {titleIndex,manualData,subtitIndex} = this.data;

@@ -38,6 +38,11 @@ Page({
            })
         });
       }
+    }else {
+      wx.showToast({
+        title: '请输入查询条件',
+        icon: 'none'
+      });
     }
     this.setData({
       renderData,

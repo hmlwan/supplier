@@ -39,9 +39,7 @@
   <view wx:if="{{manualText}}" class="manual-wrap">
     <text class="manula-tit">文本内容:</text>
     <scroll-view scroll-y class="manual-text">
-      <!-- <text user-select="true" class="manual-text-wrap"> -->
-        <rich-text class="manual-rich" nodes="{{manualText}}"></rich-text>
-      <!-- </text> -->
+        <rich-text bindlongpress="copyText" class="manual-rich" nodes="{{manualText}}"></rich-text>
     </scroll-view>
   </view>
 
