@@ -1,0 +1,50 @@
+
+<view class="container">
+  <view class="condition"> 
+    <view class="condition-tit">请选择你的查询条件:</view>
+    <view class="select-item">
+      <view class="item-select">
+        <picker
+          bindchange="bindDeviceChange"
+          value="index"
+          range="{{deviceData}}"
+          range-key="name"
+        >
+          <view class="item-picker">
+          {{deviceData[index].name || '请选择'}}
+          <text class="iconfont icon-youjiantou"></text>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="condition-tit">或者输入你的查询条件获取结果：</view>
+    <view class="input-wrap">
+      <view class="iconfont icon-guanbi icon"></view>
+      <input type="text" placeholder="输入查询条件" value="{{inputValue}}" bindinput="inputHandle" />
+      <view wx:if="{{inputValue}}" class="iconfont icon-qingchu" bindtap="clearInput"></view>
+    </view>
+    <view class="search-wrap">
+      <view class="search-btn" bindtap="searchHandle" data-id="company">搜索</view>
+    </view>
+  </view>
+  <view wx:if="{{renderData.length}}" >
+    <view wx:for="{{renderData}}" wx:key="name" class="result-wrap">
+      <view class="result-tit">
+        <view>查询结果：</view>
+        <view>{{item.name}}</view>
+      </view>
+      <view class="result-body">
+          <text class="result-name">周期</text>
+          <text class="reuslt-cont" user-select="true">{{item.cycle}}</text>
+      </view>
+      <view class="result-body">
+          <text class="result-name">生产工序</text>
+          <text class="reuslt-cont" user-select="true">{{item.processes}}</text>
+      </view>
+      <view class="result-body">
+          <text class="result-name">生产能力</text>
+          <text class="reuslt-cont" user-select="true">{{item.capacity}}</text>
+      </view>
+    </view>
+  </view>
+</view>

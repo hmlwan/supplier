@@ -1,0 +1,55 @@
+/**app.wxss**/
+@import './font/iconfont.wxss';
+
+page {
+  height: 100%;
+}
+.container {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+  overflow:scroll;
+} 
+.condition {
+  background-color: #fff;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  margin-bottom: 50rpx;
+}
+.condition-tit {
+  height: 56rpx;
+  line-height: 56rpx;
+  /* border-bottom: 1px solid #666; */
+  color: #666;
+}
+.select-item {
+  margin-bottom: 30rpx;
+  margin-top: 20rpx;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.item-select {
+  color: #333;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 1rpx solid #eee;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding-left: 40rpx;
+  padding-right: 20rpx;
+  overflow: hidden;
+}
+.item-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #666;
+}

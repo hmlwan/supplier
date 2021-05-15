@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="condition"> 
+    <view class="condition-tit">请选择你的查询条件:</view>
+    <view class="select-item">
+      <!-- <view class="item-table">一级标题:</view> -->
+      <view class="item-select">
+        <picker
+          bindchange="bindManualChange"
+          value="titleIndex"
+          range="{{manualData}}"
+          range-key="title"
+          data-id="tit"
+        >
+          <view class="item-picker">
+          {{manualData[titleIndex].title || '请选择'}}
+          <text class="iconfont icon-youjiantou"></text>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="select-item" wx:if="{{manualData[titleIndex] }}">
+      <view class="item-select">
+        <picker 
+          bindchange="bindManualChange"
+          value="subtitIndex"
+          range="{{manualData[titleIndex].content}}"
+          range-key="subtitle"
+          data-id="subtit"
+        >
+          <view class="item-picker">
+          {{manualData[titleIndex].content[subtitIndex].subtitle || '请选择'}}
+          <text class="iconfont icon-youjiantou"></text>
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{manualText}}" class="manual-wrap">
+    <text class="manula-tit">文本内容:</text>
+    <scroll-view scroll-y class="manual-text">
+      <!-- <text user-select="true" class="manual-text-wrap"> -->
+        <rich-text class="manual-rich" nodes="{{manualText}}"></rich-text>
+      <!-- </text> -->
+    </scroll-view>
+  </view>
+
+</view>

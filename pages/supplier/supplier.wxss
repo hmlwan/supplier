@@ -1,0 +1,65 @@
+.input-wrap {
+  border: 1rpx solid #eee;
+  background-color: #f8f8f8;
+  border-radius: 10rpx;
+  padding-left: 20rpx;
+  margin-top: 10rpx;
+  width: 100%;
+  height: 65rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+input {
+  margin-left: 40rpx;
+  margin-right: 10rpx;
+  height: 80rpx;
+  width: 78%;
+  /* font-size: 26rpx; */
+}
+.search-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20rpx 0;
+
+}
+.search-btn {
+  color: #eee;
+  /* font-size: 26rpx; */
+  line-height:70rpx;
+  height: 70rpx;
+  width: 48%;
+  background-color: #0052d9;
+  border-radius: 35rpx;
+  text-align: center;
+}
+
+.result {
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.result-company {
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #eee;
+}
+.result-cont {
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+.result-cont:last-child {
+  border: none;
+}
+.result-cont text {
+  flex: 1;
+}

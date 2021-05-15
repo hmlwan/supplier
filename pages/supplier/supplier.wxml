@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="condition">
+    <view class="condition-tit">查询条件：</view>
+    <view class="input-wrap">
+      <view class="iconfont icon-guanbi icon"></view>
+      <input type="text" placeholder="输入查询条件" value="{{inputValue}}" bindinput="inputHandle" />
+      <view wx:if="{{inputValue}}" class="iconfont icon-qingchu" bindtap="clearInput"></view>
+    </view>
+    <view class="search-wrap">
+      <view class="search-btn" bindtap="searchHandle" data-id="company">搜公司</view>
+      <view class="search-btn" bindtap="searchHandle" data-id="people">搜联系人</view>
+    </view>
+  </view>
+  <view  wx:if="{{renderData && renderData.length}}">
+    <block wx:if="{{renderData[0].company}}">
+      <view wx:for="{{renderData}}" wx:key="company" class="result">
+        <view class="result-company">{{item.company}}</view>
+        <view class="result-cont">
+          <text>姓名</text>
+          <text>电话</text>
+        </view>
+        <view class="result-cont" wx:for="{{item.people}}" wx:for-item="peo" wx:key="name" >
+          <text user-select="true">{{peo.name}}</text>
+          <text user-select="true">{{peo.phone}}</text>
+        </view>
+      </view>
+    </block>
+    <view wx:else class="result">
+      <view class="result-cont">
+        <text>姓名</text>
+        <text>电话</text>
+      </view>
+      <view class="result-cont" wx:for="{{renderData}}" wx:key="name">
+        <text user-select="true">{{item.name}}</text>
+        <text user-select="true">{{item.phone}}</text>
+      </view>
+    </view>
+  </view>
+</view>

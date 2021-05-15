@@ -1,0 +1,75 @@
+/**index.wxss**/
+.manual-wrap {
+  background-color: #fff;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  margin-bottom: 50rpx;
+  border-radius: 10rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.manual-wrap .manula-tit {
+  line-height: 56rpx;
+  height: 56rpx;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  display: block;
+}
+.manual-text {
+  height: 600rpx;
+  flex: 1;
+  margin-top: 20rpx;
+  line-height: 38rpx;
+  user-select:text;
+}
+.manual-rich .rich-p {
+  text-indent: 2em;
+}
+.manual-rich .box {
+  border: 1px solid #666;
+  padding: 10rpx;
+  margin: 10rpx 0;
+}
+.manual-rich .table {
+  border: 1px solid #666;
+  margin: 20rpx ;
+}
+.manual-rich .th {
+  border-bottom: 1px solid #666;
+  height: 56rpx;
+  line-height: 56rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.manual-rich .tr {
+  border-bottom: 1px solid #666;
+  min-height: 56rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.manual-rich .tr:last-child {
+  border: none;
+}
+.manual-rich .td {
+  border-right: 1px solid #666;
+  border-left: 1px solid #666;
+  flex: 1;
+  height: 100%;
+  position: relative;
+  left: -1px;
+}
+.manual-rich .td:last-child {
+  border-right: none;
+}
+.manual-rich .td:first-child {
+  border-left: none;
+  position: relative;
+  left: 0;
+}
+.rich-img {
+  width: 95%;
+  margin: 20rpx 0;
+}

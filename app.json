@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/supplier/supplier",
+    "pages/device/device",
+    "pages/manual/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "供应商查询",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+      "pagePath":"pages/supplier/supplier",
+      "text": "供应商查询"
+    },{
+      "pagePath":"pages/device/device",
+      "text": "设备查询"
+    },{
+      "pagePath":"pages/manual/index",
+      "text": "手册查询"
+    }],
+    "color": "#666",
+    "selectedColor": "#0052d9",
+    "position":"top",
+    "borderStyle":"white"
+  }
+}
