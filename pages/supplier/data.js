@@ -1,6 +1,6 @@
 const supplierData = [
   {
-    company: '常州东芝变压器有限公司',
+    company: '常州东芝变压器有限公司', // 公司名称
     people:[
       {
         name: '钱志麟',

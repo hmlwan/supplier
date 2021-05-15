@@ -1,5 +1,5 @@
 // index.js
-const ManualData = require('./manual');
+const ManualData = require('./data.js');
 Page({
   data: {
     manualData:ManualData,
@@ -22,6 +22,7 @@ Page({
       })
     }
   },
+  
   onLoad() {
      const {titleIndex,manualData,subtitIndex} = this.data;
     if(manualData[titleIndex]&&manualData[titleIndex].content[subtitIndex]) {

@@ -18,6 +18,12 @@ Page({
       renderData:[DeviceData[e.detail.value]]
     })
   },
+  
+  clearInput() {
+    this.setData({
+      inputValue: ''
+    })
+  },
   searchHandle() {
     const {inputValue} = this.data;
     let renderData = [];
@@ -26,11 +32,11 @@ Page({
         if(device.name.indexOf(inputValue.trim()) > -1) {
           renderData.push(device);
         }
-      })
+      });
+      this.setData({
+        renderData
+      });
     }
-    this.setData({
-      renderData
-    })
   },
 
   onLoad() {
