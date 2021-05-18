@@ -1,6 +1,7 @@
 const supplierData = [
   {
     company: '常州东芝变压器有限公司', // 公司名称
+    species: '一次设备（变压器）', // 公司所属材料类型
     people:[
       {
         name: '钱志麟',
@@ -21,6 +22,7 @@ const supplierData = [
   },
   {
     company: '山东电力设备有限公司',
+    species: '一次设备（变压器）',
     people:[
       {
         name: '刘文全',

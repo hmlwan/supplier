@@ -9,12 +9,14 @@
     <view class="search-wrap">
       <view class="search-btn" bindtap="searchHandle" data-id="company">搜公司</view>
       <view class="search-btn" bindtap="searchHandle" data-id="people">搜联系人</view>
+      <view class="search-btn" bindtap="searchHandle" data-id="species">搜种类</view>
     </view>
   </view>
   <view  wx:if="{{renderData && renderData.length}}">
     <block wx:if="{{renderData[0].company}}">
       <view wx:for="{{renderData}}" wx:key="company" class="result">
-        <view class="result-company">{{item.company}}</view>
+        <view class="result-tit">{{item.company}}</view>
+        <view class="result-tit">{{item.species}}</view>
         <view class="result-cont">
           <text>姓名</text>
           <text>电话</text>

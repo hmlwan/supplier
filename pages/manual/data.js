@@ -1,6 +1,7 @@
 const manualData = [
   {
     "title": "物资需求和采购计划", // 一级标题
+    "img": './img/title1.png',
     "content": [
       {
         "subtitle": "下发采购批次计划通知", // 二级标题
@@ -160,11 +161,60 @@ const manualData = [
   },
   {
     "title": "物资采购",
+    "img": './img/title2.png',
     "content": [
       {
-        "subtitle": "依据和原则",
+        "subtitle": "副标题",
         "content": `
-          <p class='rich-p'>基建物资需求计划是指满足公司基建产生的物资需求，<b>主要包括预测需求计划、实际需求计划两类。</b></p>
+          <p class='rich-p'></b></p>
+          <p class='rich-p'></p>
+          <p class='rich-p'></p>
+          <p class='rich-p'><b></b></p>
+          <p class='rich-p'><b></b></p>
+        `
+      },
+    ]
+  },
+  {
+    "title": "物资采购合同签署",
+    "img": './img/title3.png',
+    "content": [
+      {
+        "subtitle": "副标题",
+        "content": `
+          <p class='rich-p'></b></p>
+          <p class='rich-p'></p>
+          <p class='rich-p'></p>
+          <p class='rich-p'><b></b></p>
+          <p class='rich-p'><b></b></p>
+        `
+      },
+    ]
+  },
+  {
+    "title": "物资采购合同履约和质量控制",
+    "img": './img/title4.png',
+    "content": [
+      {
+        "subtitle": "副标题",
+        "content": `
+          <p class='rich-p'></b></p>
+          <p class='rich-p'></p>
+          <p class='rich-p'></p>
+          <p class='rich-p'><b></b></p>
+          <p class='rich-p'><b></b></p>
+        `
+      },
+    ]
+  },
+  {
+    "title": "物资合同结算",
+    "img": './img/title5.png',
+    "content": [
+      {
+        "subtitle": "副标题",
+        "content": `
+          <p class='rich-p'></b></p>
           <p class='rich-p'></p>
           <p class='rich-p'></p>
           <p class='rich-p'><b></b></p>

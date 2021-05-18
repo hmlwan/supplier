@@ -42,5 +42,9 @@
         <rich-text bindlongpress="copyText" class="manual-rich" nodes="{{manualText}}"></rich-text>
     </scroll-view>
   </view>
+  <view wx:if="{{!manualText && titleImg}}" class="process">
+    <view>实施流程图：</view>
+    <image mode="widthFix" src="{{titleImg}}" class="title-img" />
+  </view>
 
 </view>

@@ -37,6 +37,12 @@ Page({
             }
            })
         });
+      } else if (type == 'species') {
+        SupplierData.forEach((supplier) => {
+          if(supplier.species.indexOf(inputValue.trim()) > -1) {
+            renderData.push(supplier);
+          }
+        });
       }
     }else {
       wx.showToast({
